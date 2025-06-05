@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trip Expense Tracker</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+  </head>
+  <body>
+    <h1>Trip Expense Tracker</h1>
+
+    <form id="expense-form">
+      <label>Person's Name</label> <br />
+      <input type="text" id="name" placeholder="Person's Name" required />
+      <br />
+      <label>Expense Title</label> <br />
+      <input
+        type="text"
+        id="purpose"
+        placeholder="Purpose of Expense"
+        required
+      />
+      <br />
+      <label>Cost</label> <br />
+      <input type="number" id="amount" placeholder="Amount" required /> <br />
+      <label>Date</label> <br />
+      <input type="date" id="date" required />
+      <button type="submit">Add Expense</button>
+    </form>
+    <button id="download-pdf" type="button">Download PDF</button>
+    <table id="expense-table">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Purpose</th>
+          <th>Amount (Rs.)</th>
+          <th>Date</th>
+        </tr>
+      </thead>
+      <tbody id="expense-list"></tbody>
+    </table>
+
+    <div id="total"></div>
+    <div id="summary"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,163 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(45deg, #0a0a0a, #3a3a3a);
+  padding: 20px;
+  max-width: 700px;
+  margin: auto;
+}
+
+h1 {
+  text-align: center;
+  color: #fff;
+  margin-bottom: 20px;
+  /* background-color: #007bff; */
+  /* padding: 12px;
+  border-radius: 5px;
+  display: block;
+  width: auto;
+  text-align: center; */
+  /* box-shadow: 0px 3px 20px rgba(113, 115, 119, 0.5); */
+}
+
+form {
+  /* background: #fff; */
+  background: transparent;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 3px 20px rgba(113, 115, 119, 0.5);
+  margin-bottom: 20px;
+  border-style: double;
+  border: 1px solid #ccc;
+  /* border-color: #007bff; */
+}
+label {
+  display: block;
+  color: #fff;
+}
+input,
+button {
+  margin: 10px 10px;
+  width: auto;
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #007bff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  border: none;
+  cursor: pointer;
+  width: auto;
+}
+#download-pdf {
+  background-color: #28a745;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 5px;
+  text-align: center;
+  margin: 0%;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+#expense-list div {
+  background: #e3f2fd;
+  padding: 12px;
+  margin-top: 8px;
+  border-left: 4px solid #007bff;
+  border-radius: 4px;
+}
+
+#total,
+#summary {
+  margin-top: 20px;
+  font-weight: bold;
+  color: White;
+  /* background-color: #007bff;
+  padding: 12px;
+  border-radius: 5px;
+  width: auto;
+  text-align: center; */
+}
+table {
+  width: 100%;
+  padding: 12px;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+  overflow: hidden;
+  /* margin: 10px 10px; */
+}
+
+th,
+td {
+  padding: 12px 15px;
+  text-align: left;
+}
+
+th {
+  background-color: #007bff;
+  color: white;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f900;
+}
+tr:hover {
+  background-color: #dbd80a;
+}
+
+@media (max-width: 600px) {
+  input,
+  button {
+    width: auto;
+    margin: 8px 0;
+  }
+
+  table,
+  th,
+  td {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  form {
+    padding: 10px;
+  }
+
+  #total,
+  #summary {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
+@media (max-width: 400px) {
+  body {
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  input,
+  button {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  #download-pdf {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+  }
+}
